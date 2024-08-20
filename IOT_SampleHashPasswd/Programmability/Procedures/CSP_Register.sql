@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[CSP_Register]
+﻿CREATE PROCEDURE [AppUser].[CSP_Register]
 	@Email NVARCHAR(384),
 	@Passwd NVARCHAR(20)
 	-- Autre champs de la table utilisateur

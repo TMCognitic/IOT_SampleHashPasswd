@@ -61,6 +61,9 @@
     <Folder Include="Programmability\Procedures" />
     <Folder Include="Programmability\Functions" />
     <Folder Include="Programmability\Functions\Scalar" />
+    <Folder Include="Security" />
+    <Folder Include="Security\Schemas" />
+    <Folder Include="Script" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Utilisateur.sql" />
@@ -69,8 +72,15 @@
     <Build Include="Programmability\Functions\Scalar\CSF_GetPostSalt.sql" />
     <Build Include="Programmability\Functions\Scalar\CSF_HashPasswd.sql" />
     <Build Include="Programmability\Procedures\CSP_Login.sql" />
+    <Build Include="Security\Schemas\AppUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IOT_SampleHashPasswd.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Script\Script.PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
